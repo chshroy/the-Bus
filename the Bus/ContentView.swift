@@ -28,47 +28,44 @@ struct CustomCell: View {
                 Rectangle()
                 .fill(Color.red)
                 .frame(width: 18, height: 84)
-                .padding(.trailing, 10)
+                .padding(.trailing, 15)
                 
-                GeometryReader { geometry in
-                
-                    VStack(alignment: .leading, spacing: 0) {
-                        HStack {
-                            Text("172")
-                                .font(.system(size: 18))
-                                .fontWeight(.black)
-                                .foregroundColor(Color.black)
-                        }
-                    
-                        HStack(spacing: 0) {
-                            Text("國鼎圖書館")
-                                .font(.system(size: 20))
-                                .fontWeight(.black)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.leading)
-                                .frame(width: geometry.size.width * (3.0/8.0), alignment: .leading)
-                            Image("route")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: geometry.size.width * (2.0/8.0))
-                                .padding([.leading, .trailing], 5)
-                            Text("桃園高鐵站")
-                                .font(.system(size: 20))
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.leading)
-                                .frame(width: geometry.size.width * (3.0/8.0), alignment: .leading)
-                        }
-                    
-                        
-                        HStack {
-                            Spacer()
-                            Text("5分鐘")
-                                .fontWeight(.heavy)
-                                .padding(.trailing, 5)
-                                .foregroundColor(Color.red)
-                        }
-                    
+                VStack(alignment: .leading, spacing: 0) {
+                    HStack {
+                        Text("172")
+                            .font(.system(size: 18))
+                            .fontWeight(.black)
+                            .foregroundColor(Color.black)
                     }
+                
+                    HStack(spacing: 0) {
+                        Text("國鼎圖書館")
+                            .font(.system(size: 20))
+                            .fontWeight(.black)
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.leading)
+                            .frame(width: UIScreen.main.bounds.width * (1 / 4), alignment: .leading)
+                        Image("route")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: UIScreen.main.bounds.width * (1 / 5))
+                            .padding([.leading, .trailing], 5)
+                        Text("桃園高鐵站")
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.leading)
+                            .frame(width: UIScreen.main.bounds.width * (1 / 4), alignment: .leading)
+                    }
+                
+                    
+                    HStack {
+                        Spacer()
+                        Text("5分鐘")
+                            .fontWeight(.heavy)
+                            .padding(.trailing, 5)
+                            .foregroundColor(Color(red: 254/255, green: 84/255, blue: 84/255, opacity: 1.0))
+                    }
+                
                 }
                 Button(action: {
                     //
@@ -77,7 +74,7 @@ struct CustomCell: View {
                     
                     
                 }
-                .padding([.leading, .trailing], 15)
+                .padding(.trailing, 15)
                 
             }.frame(height: 95)
             

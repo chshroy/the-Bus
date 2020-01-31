@@ -14,6 +14,8 @@
 		B238FA6423E477550037FA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B238FA6323E477550037FA3B /* Assets.xcassets */; };
 		B238FA6723E477550037FA3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B238FA6623E477550037FA3B /* Preview Assets.xcassets */; };
 		B238FA6A23E477550037FA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B238FA6823E477550037FA3B /* LaunchScreen.storyboard */; };
+		B238FA7423E49D3A0037FA3B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238FA7323E49D3A0037FA3B /* Route.swift */; };
+		B238FA7623E49D6F0037FA3B /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238FA7523E49D6F0037FA3B /* Stop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B238FA6623E477550037FA3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B238FA6923E477550037FA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B238FA6B23E477550037FA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B238FA7323E49D3A0037FA3B /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		B238FA7523E49D6F0037FA3B /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			children = (
 				B238FA5A23E477510037FA3B /* AppDelegate.swift */,
 				B238FA5C23E477510037FA3B /* SceneDelegate.swift */,
+				B238FA7123E49B440037FA3B /* Model */,
+				B238FA7223E49D0F0037FA3B /* ViewModel */,
 				B238FA6123E477510037FA3B /* ContentView.swift */,
 				B238FA6323E477550037FA3B /* Assets.xcassets */,
 				B238FA6823E477550037FA3B /* LaunchScreen.storyboard */,
@@ -76,6 +82,22 @@
 				B238FA6623E477550037FA3B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B238FA7123E49B440037FA3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B238FA7323E49D3A0037FA3B /* Route.swift */,
+				B238FA7523E49D6F0037FA3B /* Stop.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B238FA7223E49D0F0037FA3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +174,9 @@
 				B238FA5B23E477510037FA3B /* AppDelegate.swift in Sources */,
 				B238FA6023E477510037FA3B /* the_Bus.xcdatamodeld in Sources */,
 				B238FA6223E477510037FA3B /* ContentView.swift in Sources */,
+				B238FA7423E49D3A0037FA3B /* Route.swift in Sources */,
 				B238FA5D23E477510037FA3B /* SceneDelegate.swift in Sources */,
+				B238FA7623E49D6F0037FA3B /* Stop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
